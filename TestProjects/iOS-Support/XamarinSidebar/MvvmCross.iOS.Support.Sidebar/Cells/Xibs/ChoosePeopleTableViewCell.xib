@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="NO">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <development version="7000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="97" id="cxk-wN-pdQ" customClass="ChoosePeopleTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="699" height="97"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cxk-wN-pdQ" id="YTl-1W-gDM">
+                <rect key="frame" x="0.0" y="0.0" width="699" height="96"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_profile_picture.png" translatesAutoresizingMaskIntoConstraints="NO" id="xof-Kv-QCa" misplaced="YES">
+                        <rect key="frame" x="24" y="18" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="a1E-gT-7i3"/>
+                            <constraint firstAttribute="width" constant="60" id="sAt-LE-hIg"/>
+                        </constraints>
+                    </imageView>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hXE-aU-G5A">
+                        <rect key="frame" x="626" y="33" width="51" height="31"/>
+                    </switch>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cameron Diaz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bo2-vZ-ni1" misplaced="YES">
+                        <rect key="frame" x="92" y="19" width="526" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deli Assistant, Cashier" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YT5-hV-j5B" misplaced="YES">
+                        <rect key="frame" x="92" y="61" width="526" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.37254901960784315" green="0.41176470588235292" blue="0.47843137254901957" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zgb-zE-Lh9" misplaced="YES">
+                        <rect key="frame" x="92" y="39" width="125" height="18"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="8QP-qO-iDy"/>
+                            <constraint firstAttribute="width" constant="125" id="pu1-VS-Ssh"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="YT5-hV-j5B" firstAttribute="leading" secondItem="xof-Kv-QCa" secondAttribute="trailing" constant="8" id="70I-cV-3rc"/>
+                    <constraint firstItem="hXE-aU-G5A" firstAttribute="leading" secondItem="YT5-hV-j5B" secondAttribute="trailing" constant="8" id="76X-M6-2hQ"/>
+                    <constraint firstItem="hXE-aU-G5A" firstAttribute="centerY" secondItem="YTl-1W-gDM" secondAttribute="centerY" id="Fo7-n4-36b"/>
+                    <constraint firstItem="Zgb-zE-Lh9" firstAttribute="leading" secondItem="xof-Kv-QCa" secondAttribute="trailing" constant="8" id="LEH-9L-jHl"/>
+                    <constraint firstItem="xof-Kv-QCa" firstAttribute="centerY" secondItem="YTl-1W-gDM" secondAttribute="centerY" id="MIm-aa-P2x"/>
+                    <constraint firstItem="YT5-hV-j5B" firstAttribute="top" secondItem="Zgb-zE-Lh9" secondAttribute="bottom" constant="4" id="Mef-3b-wqN"/>
+                    <constraint firstItem="bo2-vZ-ni1" firstAttribute="leading" secondItem="xof-Kv-QCa" secondAttribute="trailing" constant="8" id="gqu-8U-KVc"/>
+                    <constraint firstItem="bo2-vZ-ni1" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="topMargin" constant="11" id="kyI-lS-YJv"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="hXE-aU-G5A" secondAttribute="trailing" constant="16" id="lKU-Og-P0y"/>
+                    <constraint firstItem="Zgb-zE-Lh9" firstAttribute="top" secondItem="bo2-vZ-ni1" secondAttribute="bottom" id="mUZ-ce-hVX"/>
+                    <constraint firstItem="xof-Kv-QCa" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leadingMargin" constant="16" id="qUl-Lo-56a"/>
+                    <constraint firstItem="hXE-aU-G5A" firstAttribute="leading" secondItem="bo2-vZ-ni1" secondAttribute="trailing" constant="8" id="u9X-NA-TJc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iv_image" destination="xof-Kv-QCa" id="name-outlet-xof-Kv-QCa"/>
+                <outlet property="l_name" destination="bo2-vZ-ni1" id="name-outlet-bo2-vZ-ni1"/>
+                <outlet property="l_skills" destination="YT5-hV-j5B" id="name-outlet-YT5-hV-j5B"/>
+                <outlet property="sw_selected" destination="hXE-aU-G5A" id="name-outlet-hXE-aU-G5A"/>
+                <outlet property="rv_stars" destination="Zgb-zE-Lh9" id="name-outlet-Zgb-zE-Lh9"/>
+            </connections>
+            <point key="canvasLocation" x="749.5" y="461.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="default_profile_picture.png" width="508" height="507"/>
+        <image name="Images/ic_nav_account.png" width="80" height="80"/>
+        <image name="Images/ic_nav_history.png" width="80" height="72"/>
+        <image name="Images/ic_nav_notifications.png" width="72" height="68"/>
+        <image name="Images/ic_nav_payments.png" width="76" height="60"/>
+        <image name="Images/ic_nav_payroll.png" width="151" height="106"/>
+        <image name="Images/ic_nav_settings.png" width="144" height="144"/>
+        <image name="Images/ic_nav_sign_out.png" width="80" height="60"/>
+        <image name="Images/ic_nav_support.png" width="72" height="72"/>
+        <image name="Images/ic_nav_talent_pool.png" width="72" height="64"/>
+        <image name="Images/ic_nav_templates.png" width="72" height="72"/>
+        <image name="Images/ic_nav_terms.png" width="68" height="76"/>
+        <image name="Images/blue_pin.png" width="56" height="96"/>
+        <image name="Images/ic_cancel.png" width="32" height="32"/>
+        <image name="Images/app_icon.png" width="192" height="192"/>
+        <image name="Images/background_speaker.png" width="420" height="262"/>
+        <image name="Images/close_white.png" width="120" height="121"/>
+        <image name="Images/close.png" width="120" height="121"/>
+        <image name="Images/emma.jpg" width="570" height="570"/>
+        <image name="Images/er_onboarding_3.jpg" width="1125" height="1876"/>
+        <image name="Images/ic_add_white_24dp.png" width="96" height="96"/>
+        <image name="Images/ic_cancel_grey.png" width="56" height="56"/>
+        <image name="Images/ic_chevron_right.png" width="30" height="48"/>
+        <image name="Images/ic_close_white.png" width="56" height="56"/>
+        <image name="Images/ic_coach_screen_step1.png" width="648" height="648"/>
+        <image name="Images/ic_coach_screen_step2.png" width="648" height="648"/>
+        <image name="Images/ic_coach_screen_step3.png" width="648" height="648"/>
+        <image name="Images/ic_confirm.png" width="34" height="26"/>
+        <image name="Images/ic_dialog_feedback_thumbs_down.png" width="32" height="32"/>
+        <image name="Images/ic_dialog_feedback_thumbs_up.png" width="32" height="32"/>
+        <image name="Images/ic_dropdown.png" width="17" height="12"/>
+        <image name="Images/ic_empty_history.png" width="452" height="408"/>
+        <image name="Images/ic_empty_locations.png" width="452" height="408"/>
+        <image name="Images/ic_empty_managers.png" width="452" height="408"/>
+        <image name="Images/ic_empty_notifications.png" width="452" height="408"/>
+        <image name="Images/ic_empty_payments.png" width="452" height="408"/>
+        <image name="Images/ic_empty_talent_pool.png" width="452" height="408"/>
+        <image name="Images/ic_empty_templates.png" width="452" height="408"/>
+        <image name="Images/ic_notifications_check_in.png" width="144" height="144"/>
+        <image name="Images/ic_notifications_check_out.png" width="144" height="144"/>
+        <image name="Images/ic_notifications_shift_cancelled.png" width="144" height="144"/>
+        <image name="Images/ic_notifications_shift_created.png" width="144" height="144"/>
+        <image name="Images/ic_notifications_shift_ended.png" width="144" height="144"/>
+        <image name="Images/ic_notifications_shift_started.png" width="144" height="144"/>
+        <image name="Images/ic_profile_upload.png" width="36" height="36"/>
+        <image name="Images/ic_red_heart.png" width="104" height="96"/>
+        <image name="Images/ic_settings.png" width="196" height="201"/>
+        <image name="Images/ic_shift_details_hourly_rate.png" width="64" height="72"/>
+        <image name="Images/ic_shift_details_manager.png" width="80" height="80"/>
+        <image name="Images/ic_shift_details_play.png" width="80" height="80"/>
+        <image name="Images/ic_shift_details_rate.png" width="88" height="68"/>
+        <image name="Images/ic_shift_pin.png" width="76" height="104"/>
+        <image name="Images/ic_shift_special_notes.png" width="72" height="72"/>
+        <image name="Images/ic_shift_templates_people.png" width="64" height="64"/>
+        <image name="Images/ic_small_pin.png" width="32" height="48"/>
+        <image name="Images/ic_white_heart.png" width="104" height="96"/>
+        <image name="Images/shift_creation_success.png" width="1120" height="600"/>
+        <image name="Images/sign_in_email.png" width="180" height="180"/>
+        <image name="Images/sign_in_lock.png" width="150" height="200"/>
+        <image name="Images/sign_in_logo.png" width="601" height="604"/>
+        <image name="Images/upworky_blue.png" width="2666" height="2000"/>
+        <image name="Images/welcome_artwork.png" width="1015" height="1016"/>
+        <image name="Images/welcome_logo_header.png" width="880" height="200"/>
+        <image name="Images/no_internet.png" width="360" height="224"/>
+        <image name="Images/ic_not_authorized.png" width="452" height="408"/>
+        <image name="Images/er_onboarding_0.jpg" width="1125" height="1876"/>
+        <image name="Images/er_onboarding_1.jpg" width="1125" height="1876"/>
+        <image name="Images/er_onboarding_2.jpg" width="1125" height="1876"/>
+        <image name="Images/success_registration.png" width="300" height="300"/>
+        <image name="Images/Rating/chosen.png" width="100" height="100"/>
+        <image name="Images/Rating/empty.png" width="100" height="100"/>
+        <image name="Images/Rating/filled.png" width="100" height="100"/>
+        <image name="Images/threelines.png" width="24" height="24"/>
+        <image name="Images/twolines.png" width="24" height="24"/>
+    </resources>
+</document>

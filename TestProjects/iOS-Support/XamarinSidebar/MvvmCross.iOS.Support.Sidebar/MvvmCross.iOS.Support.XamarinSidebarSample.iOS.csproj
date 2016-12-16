@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{8EADF357-81D7-426D-A64E-5EF83E635737}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>MvvmCross.iOS.Support.XamarinSidebarSample.iOS</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>MvvmCrossiOSSupportSidebar</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>i386</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchUseSGen>true</MtouchUseSGen>
+    <MtouchFastDev>true</MtouchFastDev>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchProfiling>true</MtouchProfiling>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchFloat32>true</MtouchFloat32>
+    <MtouchUseSGen>true</MtouchUseSGen>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>i386</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchUseSGen>true</MtouchUseSGen>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchFloat32>True</MtouchFloat32>
+    <CodesignKey>iPhone Developer: Flaviu Demian (YAEJE3596Y)</CodesignKey>
+    <DeviceSpecificBuild>True</DeviceSpecificBuild>
+    <MtouchDebug>True</MtouchDebug>
+    <MtouchUseSGen>True</MtouchUseSGen>
+    <MtouchUseRefCounting>True</MtouchUseRefCounting>
+    <MtouchProfiling>False</MtouchProfiling>
+    <CodesignProvision>6c652f5e-26d5-4eeb-9679-4c2864cac26a</CodesignProvision>
+    <MtouchSdkVersion>10.1</MtouchSdkVersion>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchFastDev>True</MtouchFastDev>
+    <MtouchUseLlvm>False</MtouchUseLlvm>
+    <MtouchUseThumb>False</MtouchUseThumb>
+    <MtouchEnableBitcode>False</MtouchEnableBitcode>
+    <OptimizePNGs>True</OptimizePNGs>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MvvmCross.Platform, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\MvvmCross.Platform.4.4.0\lib\Xamarin.iOS10\MvvmCross.Platform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MvvmCross.Platform.iOS, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\MvvmCross.Platform.4.4.0\lib\Xamarin.iOS10\MvvmCross.Platform.iOS.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.DownloadCache, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\MvvmCross.Plugin.DownloadCache.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.DownloadCache.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.DownloadCache.iOS, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\MvvmCross.Plugin.DownloadCache.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.DownloadCache.iOS.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.File, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\MvvmCross.Plugin.File.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.File.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.File.iOS, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\MvvmCross.Plugin.File.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.File.iOS.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Collections.Immutable, Version=1.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\System.Collections.Immutable.1.2.0\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="Cirrious.FluentLayouts.Touch">
+      <HintPath>..\..\..\..\packages\Cirrious.FluentLayout.2.5.0\lib\Xamarin.iOS10\Cirrious.FluentLayouts.Touch.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="Cells\Xibs\MenuViewCell.xib" />
+    <InterfaceDefinition Include="Cells\Xibs\ChoosePeopleTableViewCell.xib" />
+    <InterfaceDefinition Include="Cells\Xibs\TemplatesTableViewCell.xib" />
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+    <None Include="packages.config" />
+    <InterfaceDefinition Include="Storyboard\MainStoryboard.storyboard" />
+    <InterfaceDefinition Include="Storyboard\MainStoryboardIulian.storyboard" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bootstrap\DownloadCachePluginBootstrap.cs" />
+    <Compile Include="Bootstrap\FilePluginBootstrap.cs" />
+    <Compile Include="Cells\ChoosePeopleTableViewCell.cs" />
+    <Compile Include="Cells\ChoosePeopleTableViewCell.designer.cs">
+      <DependentUpon>ChoosePeopleTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cells\MenuViewCell.cs" />
+    <Compile Include="Cells\MenuViewCell.designer.cs">
+      <DependentUpon>MenuViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cells\TemplatesTableViewCell.cs" />
+    <Compile Include="Cells\TemplatesTableViewCell.designer.cs">
+      <DependentUpon>TemplatesTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="Setup.cs" />
+    <Compile Include="DebugTrace.cs" />
+    <Compile Include="LinkerPleaseInclude.cs" />
+    <Compile Include="Views\BaseMvxTableViewController.cs" />
+    <Compile Include="Views\BaseMvxViewController.cs" />
+    <Compile Include="Views\BaseViewController.cs" />
+    <Compile Include="Views\CenterPanelView.cs" />
+    <Compile Include="Views\ChoosePeopleViewController.cs" />
+    <Compile Include="Views\ChoosePeopleViewController.designer.cs">
+      <DependentUpon>ChoosePeopleViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ExampleMenuItemView.cs" />
+    <Compile Include="Views\KeyboardHandlingView.cs" />
+    <Compile Include="Views\BaseMenuViewController.cs" />
+    <Compile Include="Views\MenuViewController.cs" />
+    <Compile Include="Views\MenuViewController.designer.cs">
+      <DependentUpon>MenuViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TemplatesViewController.cs" />
+    <Compile Include="Views\TemplatesViewController.designer.cs">
+      <DependentUpon>TemplatesViewController.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <ItemGroup>
+    <BundleResource Include="Resources\Images\threelines.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\twolines.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\MvvmCross\Core\Binding\MvvmCross.Binding.csproj">
+      <Project>{64DCD397-9019-41E8-A928-E5F5C5DF185B}</Project>
+      <Name>MvvmCross.Binding</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\MvvmCross\Binding\iOS\MvvmCross.Binding.iOS.csproj">
+      <Project>{913B13B5-7B2C-4DDA-BECB-DADC827ED895}</Project>
+      <Name>MvvmCross.Binding.iOS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\MvvmCross\Core\Core\MvvmCross.Core.csproj">
+      <Project>{B6E27475-E7D0-448C-A5CC-5097DCA1E2DD}</Project>
+      <Name>MvvmCross.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\MvvmCross\iOS\iOS\MvvmCross.iOS.csproj">
+      <Project>{E042EDD9-E89D-4928-BF4D-27F0FC29CEDA}</Project>
+      <Name>MvvmCross.iOS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\MvvmCross-iOSSupport\MvvmCross.iOS.Support\MvvmCross.iOS.Support.csproj">
+      <Project>{E6A71CD5-82A0-49E9-A04D-166F9E8F76F9}</Project>
+      <Name>MvvmCross.iOS.Support</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\MvvmCross-iOSSupport\MvvmCross.iOS.Support.XamarinSidebar\MvvmCross.iOS.Support.XamarinSidebar.csproj">
+      <Project>{29579644-AF3E-412F-86EF-FA413C5A08CA}</Project>
+      <Name>MvvmCross.iOS.Support.XamarinSidebar</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MvvmCross.iOS.Support.Core\MvvmCross.iOS.Support.XamarinSidebarSample.Core.csproj">
+      <Project>{1639F4A6-EA27-471E-8ADE-1452DB2A378B}</Project>
+      <Name>MvvmCross.iOS.Support.XamarinSidebarSample.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Images\ic_nav_templates.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Images\ic_nav_settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\default_profile_picture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Images\ic_nav_talent_pool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Images\ic_chevron_right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Images\ic_cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Images\ic_cancel_grey.png" />
+  </ItemGroup>
+</Project>
