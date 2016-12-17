@@ -661,18 +661,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="50">
-                                <rect key="frame" x="20" y="319" width="560" height="21"/>
+                                <rect key="frame" x="24" y="319" width="327" height="21"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="560" id="rOH-Bq-2uc"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="50" firstAttribute="leading" secondItem="21" secondAttribute="leadingMargin" constant="4" id="ozd-ns-KDw"/>
+                            <constraint firstItem="50" firstAttribute="leading" secondItem="21" secondAttribute="leadingMargin" constant="8" id="IDR-2t-tZl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="50" secondAttribute="trailing" constant="8" id="s6i-CZ-4g8"/>
                             <constraint firstItem="50" firstAttribute="top" secondItem="17" secondAttribute="bottom" constant="299" id="sT0-e5-nEW"/>
                         </constraints>
                     </view>
