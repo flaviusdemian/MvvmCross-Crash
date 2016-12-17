@@ -16,7 +16,6 @@ namespace MvvmCross.iOS.Support.XamarinSidebarSample.iOS
 		public SecondViewController()
 		{
 		}
-
 	}
 }
 

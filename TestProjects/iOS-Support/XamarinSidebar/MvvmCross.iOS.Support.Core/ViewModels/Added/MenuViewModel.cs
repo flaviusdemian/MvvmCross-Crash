@@ -22,7 +22,7 @@ namespace MvvmCross.iOS.Support.XamarinSidebarSample.Core.ViewModels
 
         #endregion
 
-        public MenuViewModel() : base()
+        public MenuViewModel()
         {
             CalculateNotificationsCount();
 
@@ -49,13 +49,13 @@ namespace MvvmCross.iOS.Support.XamarinSidebarSample.Core.ViewModels
                   new MenuItem()
                 {
                     IconPath = "Images/ic_nav_templates",
-                    Text = "Menu View 1",
+                    Text = "Menu View 2",
                     ViewModelType = "MenuViewModel2" // nameof(ShiftTemplatesViewModel)
                 },
                    new MenuItem()
                 {
                     IconPath = "Images/ic_nav_templates",
-                    Text = "Menu View 2",
+                    Text = "Menu View 3",
                     ViewModelType = "MenuViewModel3" // nameof(ShiftTemplatesViewModel)
                 },
             };

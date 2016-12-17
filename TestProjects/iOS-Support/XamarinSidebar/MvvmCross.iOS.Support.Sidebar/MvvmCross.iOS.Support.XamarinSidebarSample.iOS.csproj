@@ -158,10 +158,8 @@
     <Compile Include="Setup.cs" />
     <Compile Include="DebugTrace.cs" />
     <Compile Include="LinkerPleaseInclude.cs" />
-    <Compile Include="Views\BaseMvxViewController.cs" />
     <Compile Include="Views\CenterPanelView.cs" />
     <Compile Include="Views\KeyboardHandlingView.cs" />
-    <Compile Include="Views\BaseMenuViewController.cs" />
     <Compile Include="Views\Added\BaseMvxTableViewController.cs" />
     <Compile Include="Views\Added\BaseViewController.cs" />
     <Compile Include="Views\Added\ChoosePeopleViewController.cs" />
@@ -171,10 +169,6 @@
     <Compile Include="Views\Added\FirstViewController.cs" />
     <Compile Include="Views\Added\FirstViewController.designer.cs">
       <DependentUpon>FirstViewController.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Added\MenuViewController.cs" />
-    <Compile Include="Views\Added\MenuViewController.designer.cs">
-      <DependentUpon>MenuViewController.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Added\SecondViewController.cs" />
     <Compile Include="Views\Added\SecondViewController.designer.cs">
@@ -192,6 +186,8 @@
     <Compile Include="Views\Added\ThirdViewController.designer.cs">
       <DependentUpon>ThirdViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Added\BaseMvxViewController.cs" />
+    <Compile Include="Views\Added\MenuViewController.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>

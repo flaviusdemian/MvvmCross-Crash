@@ -28,6 +28,13 @@ namespace MvvmCross.iOS.Support.XamarinSidebarSample.iOS.Cells
 			set { lbl_number = value; }
 		}
 
+		public UILabel TextEntryLabel
+		{
+			get { return lbl_text; }
+			set { lbl_text = value; }
+		}
+
+
 		public UIImageView IconImage
 		{
 			get { return iv_icon; }
@@ -36,7 +43,7 @@ namespace MvvmCross.iOS.Support.XamarinSidebarSample.iOS.Cells
 
 		internal static nfloat GetCellHeight()
 		{
-			return 80f;
+			return 100f;
 		}
 
 		#region private methods

@@ -3,7 +3,6 @@ using Foundation;
 using MvvmCross.Binding.BindingContext;
 using MvvmCross.Binding.iOS.Views;
 using MvvmCross.iOS.Support.SidePanels;
-using MvvmCross.iOS.Support.XamarinSidebarSample.Core;
 using MvvmCross.iOS.Support.XamarinSidebarSample.Core.ViewModels;
 using MvvmCross.iOS.Support.XamarinSidebarSample.iOS.Cells;
 using MvvmCross.iOS.Views;
@@ -11,7 +10,7 @@ using UIKit;
 
 namespace MvvmCross.iOS.Support.XamarinSidebarSample.iOS.Views
 {
-	[MvxPanelPresentation(MvxPanelEnum.Center, MvxPanelHintType.ActivePanel, true)]
+	[MvxPanelPresentation(MvxPanelEnum.Center, MvxPanelHintType.ActivePanel, false)]
 	[MvxFromStoryboard("MainStoryboard")]
 	public partial class TemplatesViewController : BaseMvxViewController<ShiftTemplatesViewModel>
 	{
