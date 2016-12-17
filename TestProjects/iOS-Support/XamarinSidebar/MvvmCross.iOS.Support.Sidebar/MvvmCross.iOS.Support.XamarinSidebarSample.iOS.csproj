@@ -66,7 +66,7 @@
     <ConsolePause>false</ConsolePause>
     <MtouchArch>ARMv7, ARM64</MtouchArch>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
-    <MtouchFloat32>True</MtouchFloat32>
+    <MtouchFloat32>false</MtouchFloat32>
     <CodesignKey>iPhone Developer: Flaviu Demian (YAEJE3596Y)</CodesignKey>
     <DeviceSpecificBuild>True</DeviceSpecificBuild>
     <MtouchDebug>True</MtouchDebug>
@@ -83,6 +83,7 @@
     <OptimizePNGs>True</OptimizePNGs>
     <MtouchTlsProvider>Default</MtouchTlsProvider>
     <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="MvvmCross.Platform, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -167,7 +168,6 @@
     <Compile Include="Views\ChoosePeopleViewController.designer.cs">
       <DependentUpon>ChoosePeopleViewController.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\ExampleMenuItemView.cs" />
     <Compile Include="Views\KeyboardHandlingView.cs" />
     <Compile Include="Views\BaseMenuViewController.cs" />
     <Compile Include="Views\MenuViewController.cs" />
@@ -177,6 +177,22 @@
     <Compile Include="Views\TemplatesViewController.cs" />
     <Compile Include="Views\TemplatesViewController.designer.cs">
       <DependentUpon>TemplatesViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FirstViewController.cs" />
+    <Compile Include="Views\FirstViewController.designer.cs">
+      <DependentUpon>FirstViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SecondViewController.cs" />
+    <Compile Include="Views\SecondViewController.designer.cs">
+      <DependentUpon>SecondViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ThirdViewController.cs" />
+    <Compile Include="Views\ThirdViewController.designer.cs">
+      <DependentUpon>ThirdViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TalentPoolViewController.cs" />
+    <Compile Include="Views\TalentPoolViewController.designer.cs">
+      <DependentUpon>TalentPoolViewController.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

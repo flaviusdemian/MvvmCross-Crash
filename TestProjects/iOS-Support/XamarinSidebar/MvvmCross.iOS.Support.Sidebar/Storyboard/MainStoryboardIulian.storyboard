@@ -1,8 +1,8 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="NO" initialViewController="J7u-ef-52K">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="NO" initialViewController="J7u-ef-52K">
     <dependencies>
         <development version="7000" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
     </dependencies>
     <scenes>
         <!--Talent Pool View Controller-->
@@ -82,11 +82,6 @@
             </objects>
             <point key="canvasLocation" x="1554" y="132"/>
         </scene>
-        <!--Feedback View Controller-->
-        <!--Choose Skill View Controller-->
-        <!--Add Location View Controller-->
-        <!--My Payments View Controller-->
-        <!--History View Controller-->
         <!--Templates View Controller-->
         <scene sceneID="F3s-qP-eut">
             <objects>
@@ -131,83 +126,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7A5-mc-jzM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3840.8" y="122.7886"/>
+            <point key="canvasLocation" x="3840.8000000000002" y="122.7886"/>
         </scene>
-        <!--Add Manager View Controller-->
     </scenes>
     <resources>
         <image name="Images/ic_empty_talent_pool.png" width="452" height="408"/>
-        <image name="Images/ic_empty_templates.png" width="452" height="408"/>
-        <image name="default_profile_picture.png" width="508" height="507"/>
-        <image name="Images/ic_nav_account.png" width="80" height="80"/>
-        <image name="Images/ic_nav_history.png" width="80" height="72"/>
-        <image name="Images/ic_nav_notifications.png" width="72" height="68"/>
-        <image name="Images/ic_nav_payments.png" width="76" height="60"/>
-        <image name="Images/ic_nav_payroll.png" width="151" height="106"/>
-        <image name="Images/ic_nav_settings.png" width="144" height="144"/>
-        <image name="Images/ic_nav_sign_out.png" width="80" height="60"/>
-        <image name="Images/ic_nav_support.png" width="72" height="72"/>
-        <image name="Images/ic_nav_talent_pool.png" width="72" height="64"/>
-        <image name="Images/ic_nav_templates.png" width="72" height="72"/>
-        <image name="Images/ic_nav_terms.png" width="68" height="76"/>
-        <image name="Images/blue_pin.png" width="56" height="96"/>
-        <image name="Images/ic_cancel.png" width="32" height="32"/>
-        <image name="Images/app_icon.png" width="192" height="192"/>
-        <image name="Images/background_speaker.png" width="420" height="262"/>
-        <image name="Images/close_white.png" width="120" height="121"/>
-        <image name="Images/close.png" width="120" height="121"/>
-        <image name="Images/emma.jpg" width="570" height="570"/>
-        <image name="Images/er_onboarding_3.jpg" width="1125" height="1876"/>
-        <image name="Images/ic_add_white_24dp.png" width="96" height="96"/>
-        <image name="Images/ic_cancel_grey.png" width="56" height="56"/>
-        <image name="Images/ic_chevron_right.png" width="30" height="48"/>
-        <image name="Images/ic_close_white.png" width="56" height="56"/>
-        <image name="Images/ic_coach_screen_step1.png" width="648" height="648"/>
-        <image name="Images/ic_coach_screen_step2.png" width="648" height="648"/>
-        <image name="Images/ic_coach_screen_step3.png" width="648" height="648"/>
-        <image name="Images/ic_confirm.png" width="34" height="26"/>
-        <image name="Images/ic_dialog_feedback_thumbs_down.png" width="32" height="32"/>
-        <image name="Images/ic_dialog_feedback_thumbs_up.png" width="32" height="32"/>
-        <image name="Images/ic_dropdown.png" width="17" height="12"/>
-        <image name="Images/ic_empty_locations.png" width="452" height="408"/>
-        <image name="Images/ic_empty_managers.png" width="452" height="408"/>
-        <image name="Images/ic_empty_notifications.png" width="452" height="408"/>
-        <image name="Images/ic_notifications_check_in.png" width="144" height="144"/>
-        <image name="Images/ic_notifications_check_out.png" width="144" height="144"/>
-        <image name="Images/ic_notifications_shift_cancelled.png" width="144" height="144"/>
-        <image name="Images/ic_notifications_shift_created.png" width="144" height="144"/>
-        <image name="Images/ic_notifications_shift_ended.png" width="144" height="144"/>
-        <image name="Images/ic_notifications_shift_started.png" width="144" height="144"/>
-        <image name="Images/ic_profile_upload.png" width="36" height="36"/>
-        <image name="Images/ic_red_heart.png" width="104" height="96"/>
-        <image name="Images/ic_settings.png" width="196" height="201"/>
-        <image name="Images/ic_shift_details_hourly_rate.png" width="64" height="72"/>
-        <image name="Images/ic_shift_details_manager.png" width="80" height="80"/>
-        <image name="Images/ic_shift_details_play.png" width="80" height="80"/>
-        <image name="Images/ic_shift_details_rate.png" width="88" height="68"/>
-        <image name="Images/ic_shift_pin.png" width="76" height="104"/>
-        <image name="Images/ic_shift_special_notes.png" width="72" height="72"/>
-        <image name="Images/ic_shift_templates_people.png" width="64" height="64"/>
-        <image name="Images/ic_small_pin.png" width="32" height="48"/>
-        <image name="Images/ic_white_heart.png" width="104" height="96"/>
-        <image name="Images/shift_creation_success.png" width="1120" height="600"/>
-        <image name="Images/sign_in_email.png" width="180" height="180"/>
-        <image name="Images/sign_in_lock.png" width="150" height="200"/>
-        <image name="Images/sign_in_logo.png" width="601" height="604"/>
-        <image name="Images/upworky_blue.png" width="2666" height="2000"/>
-        <image name="Images/welcome_artwork.png" width="1015" height="1016"/>
-        <image name="Images/welcome_logo_header.png" width="880" height="200"/>
-        <image name="Images/no_internet.png" width="360" height="224"/>
-        <image name="Images/ic_not_authorized.png" width="452" height="408"/>
-        <image name="Images/er_onboarding_0.jpg" width="1125" height="1876"/>
-        <image name="Images/er_onboarding_1.jpg" width="1125" height="1876"/>
-        <image name="Images/er_onboarding_2.jpg" width="1125" height="1876"/>
-        <image name="Images/success_registration.png" width="300" height="300"/>
-        <image name="Images/threelines.png" width="24" height="24"/>
-        <image name="Images/twolines.png" width="24" height="24"/>
-        <image name="Images/Rating/chosen.png" width="100" height="100"/>
-        <image name="Images/Rating/empty.png" width="100" height="100"/>
-        <image name="Images/Rating/filled.png" width="100" height="100"/>
-        <image name="twolines.png" width="24" height="24"/>
     </resources>
 </document>

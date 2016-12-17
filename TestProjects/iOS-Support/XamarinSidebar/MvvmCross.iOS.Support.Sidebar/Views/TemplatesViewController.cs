@@ -11,7 +11,7 @@ using UIKit;
 
 namespace MvvmCross.iOS.Support.XamarinSidebarSample.iOS.Views
 {
-	[MvxPanelPresentation(MvxPanelEnum.Center, MvxPanelHintType.ActivePanel, true)]
+	[MvxPanelPresentation(MvxPanelEnum.Center, MvxPanelHintType.ActivePanel, false)]
 	[MvxFromStoryboard("MainStoryboardIulian")]
 	public partial class TemplatesViewController : BaseMvxViewController<ShiftTemplatesViewModel>
 	{
