@@ -192,6 +192,7 @@
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <BundleResource Include="Resources\Images\threelines.png" />
+    <BundleResource Include="Resources\Images\ic_shift_templates_people.png" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\twolines.png" />

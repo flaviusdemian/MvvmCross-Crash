@@ -11,7 +11,7 @@
             <rect key="frame" x="0.0" y="0.0" width="596" height="218"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="r4R-XD-Bjo" id="did-ce-VQc">
-                <rect key="frame" x="0.0" y="0.0" width="596" height="217.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="596" height="217"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vav-Oj-tsr">
@@ -20,7 +20,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zu2-cv-7fe">
                                 <rect key="frame" x="0.0" y="0.0" width="556" height="52"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deli Assistant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M1a-xo-MFt">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deli Assistant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M1a-xo-MFt" misplaced="YES">
                                         <rect key="frame" x="16" y="16" width="106.5" height="20"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                         <nil key="highlightedColor"/>
@@ -143,9 +143,15 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="Images/blue_pin.png" width="56" height="96"/>
-        <image name="Images/ic_cancel.png" width="56" height="56"/>
+        <image name="Images/ic_cancel.png" width="32" height="32"/>
         <image name="Images/ic_chevron_right.png" width="30" height="48"/>
         <image name="Images/ic_shift_templates_people.png" width="64" height="64"/>
+        <image name="Images/threelines.png" width="24" height="24"/>
+        <image name="twolines.png" width="24" height="24"/>
+        <image name="Images/ic_nav_templates.png" width="72" height="72"/>
+        <image name="Images/ic_nav_settings.png" width="144" height="144"/>
+        <image name="default_profile_picture.png" width="508" height="507"/>
+        <image name="Images/ic_nav_talent_pool.png" width="72" height="64"/>
+        <image name="Images/ic_cancel_grey.png" width="56" height="56"/>
     </resources>
 </document>

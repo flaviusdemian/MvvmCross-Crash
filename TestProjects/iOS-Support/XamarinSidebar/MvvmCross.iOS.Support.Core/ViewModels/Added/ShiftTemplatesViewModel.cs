@@ -12,9 +12,9 @@ namespace MvvmCross.iOS.Support.XamarinSidebarSample.Core.ViewModels
 {
     public class ShiftTemplatesViewModel : BaseViewModel
     {
-        #region private methods
+		#region private methods
 
-        private ObservableCollection<ShiftTemplateUI> mShiftTemplates;
+		private ObservableCollection<ShiftTemplateUI> mShiftTemplates = new ObservableCollection<ShiftTemplateUI>();
 
         #endregion
 
@@ -46,7 +46,7 @@ namespace MvvmCross.iOS.Support.XamarinSidebarSample.Core.ViewModels
 
         public void GetShiftTemplates()
         {
-            Task.Run(() => GetShiftTemplatesAsync()).ConfigureAwait(false);
+			Task.Run(() => GetShiftTemplatesAsync().ConfigureAwait(false)).ConfigureAwait(false);
         }
 
         public void GoToHomeScreen()
@@ -65,18 +65,18 @@ namespace MvvmCross.iOS.Support.XamarinSidebarSample.Core.ViewModels
 
             RequestMainThreadAction(() =>
             {
-                if (ShiftTemplates == null)
-                {
-                    ShiftTemplates = new ObservableCollection<ShiftTemplateUI>(resultUiTemplates);
-                }
-                else
-                {
+                //if (ShiftTemplates == null)
+                //{
+                //    ShiftTemplates = new ObservableCollection<ShiftTemplateUI>(resultUiTemplates);
+                //}
+                //else
+                //{
                     ShiftTemplates.Clear();
                     foreach (var item in resultUiTemplates)
                     {
                         ShiftTemplates.Add(item);
                     }
-                }
+                //}
             });
         }
 
