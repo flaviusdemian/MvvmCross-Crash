@@ -174,10 +174,6 @@
     <Compile Include="Views\Added\SecondViewController.designer.cs">
       <DependentUpon>SecondViewController.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Added\TalentPoolViewController.cs" />
-    <Compile Include="Views\Added\TalentPoolViewController.designer.cs">
-      <DependentUpon>TalentPoolViewController.cs</DependentUpon>
-    </Compile>
     <Compile Include="Views\Added\TemplatesViewController.cs" />
     <Compile Include="Views\Added\TemplatesViewController.designer.cs">
       <DependentUpon>TemplatesViewController.cs</DependentUpon>

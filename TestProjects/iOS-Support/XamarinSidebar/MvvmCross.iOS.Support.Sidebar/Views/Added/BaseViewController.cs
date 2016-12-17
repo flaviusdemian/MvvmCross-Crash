@@ -19,8 +19,7 @@ namespace MvvmCross.iOS.Support.XamarinSidebarSample.iOS.Views
             base.ViewDidLoad();
 
             View.BackgroundColor = UIColor.Gray;
-
-            EdgesForExtendedLayout = UIRectEdge.None;
+            //EdgesForExtendedLayout = UIRectEdge.None;
         }
     }
 }
