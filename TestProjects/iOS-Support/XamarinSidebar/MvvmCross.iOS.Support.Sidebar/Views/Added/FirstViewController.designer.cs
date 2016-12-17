@@ -1,4 +1,4 @@
-﻿// WARNING
+// WARNING
 //
 // This file has been generated automatically by Xamarin Studio from the outlets and
 // actions declared in your storyboard file.
@@ -11,11 +11,11 @@ using UIKit;
 
 namespace MvvmCross.iOS.Support.XamarinSidebarSample.iOS
 {
-	[Register("FirstViewController")]
-	partial class FirstViewController
-	{
-		void ReleaseDesignerOutlets()
-		{
-		}
-	}
+    [Register ("FirstViewController")]
+    partial class FirstViewController
+    {
+        void ReleaseDesignerOutlets ()
+        {
+        }
+    }
 }

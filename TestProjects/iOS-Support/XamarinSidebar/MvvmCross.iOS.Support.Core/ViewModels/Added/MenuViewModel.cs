@@ -44,19 +44,19 @@ namespace MvvmCross.iOS.Support.XamarinSidebarSample.Core.ViewModels
                 {
                     IconPath = "Images/ic_nav_templates",
                     Text = "Menu View 1",
-                    ViewModelType = "MenuViewModel1" // nameof(ShiftTemplatesViewModel)
+                    ViewModelType = "FirstViewModel" // nameof(ShiftTemplatesViewModel)
                 },
                   new MenuItem()
                 {
                     IconPath = "Images/ic_nav_templates",
                     Text = "Menu View 2",
-                    ViewModelType = "MenuViewModel2" // nameof(ShiftTemplatesViewModel)
+                    ViewModelType = "SecondViewModel" // nameof(ShiftTemplatesViewModel)
                 },
                    new MenuItem()
                 {
                     IconPath = "Images/ic_nav_templates",
                     Text = "Menu View 3",
-                    ViewModelType = "MenuViewModel3" // nameof(ShiftTemplatesViewModel)
+                    ViewModelType = "ThirdViewModel" // nameof(ShiftTemplatesViewModel)
                 },
             };
         }
@@ -138,14 +138,14 @@ namespace MvvmCross.iOS.Support.XamarinSidebarSample.Core.ViewModels
                 case nameof(ShiftTemplatesViewModel):
                     ShowViewModel<ShiftTemplatesViewModel>();
                     break;
-                case "ViewModel1": //nameof(TalentPoolViewModel):
-                    //ShowViewModel<TalentPoolViewModel>();
+                case nameof(FirstViewModel):
+					ShowViewModel<FirstViewModel>();
                     break;
-                case "ViewModel2": //nameof(TalentPoolViewModel):
-                    //ShowViewModel<TalentPoolViewModel>();
+                case nameof(SecondViewModel):
+					ShowViewModel<SecondViewModel>();
                     break;
-                case "ViewModel3": //nameof(TalentPoolViewModel):
-                    //ShowViewModel<TalentPoolViewModel>();
+                case nameof(ThirdViewModel):
+					ShowViewModel<ThirdViewModel>();
                     break;
             }
         }

@@ -28,7 +28,7 @@
                             <constraint firstAttribute="height" constant="21" id="9Gh-KO-LGn"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" colorSpace="calibratedWhite" white="0" alpha="1"/>
+                        <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4vq-6Y-xdv" misplaced="YES">
@@ -51,6 +51,7 @@
                     <constraint firstItem="AK6-cL-pej" firstAttribute="leading" secondItem="WYW-Eg-AiF" secondAttribute="trailing" constant="8" symbolic="YES" id="ca4-DX-G5U"/>
                     <constraint firstItem="4vq-6Y-xdv" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="topMargin" constant="8" id="uBA-5Q-Fkt"/>
                 </constraints>
+                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
             </tableViewCellContentView>
             <connections>
                 <outlet property="iv_icon" destination="WYW-Eg-AiF" id="name-outlet-WYW-Eg-AiF"/>
@@ -62,7 +63,6 @@
     </objects>
     <resources>
         <image name="default_profile_picture.png" width="508" height="507"/>
-        <image name="Images/ic_nav_history.png" width="80" height="72"/>
         <image name="Images/ic_nav_notifications.png" width="72" height="68"/>
         <image name="Images/ic_nav_payments.png" width="76" height="60"/>
         <image name="Images/ic_nav_payroll.png" width="151" height="106"/>

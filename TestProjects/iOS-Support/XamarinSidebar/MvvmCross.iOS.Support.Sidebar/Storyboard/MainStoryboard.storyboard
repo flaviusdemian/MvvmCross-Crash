@@ -242,7 +242,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J85-Uf-hEd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2061" y="59"/>
+            <point key="canvasLocation" x="1900" y="70"/>
         </scene>
         <!--Profile View Controller-->
         <!--Employee Profile View Controller-->
@@ -322,7 +322,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Usd-fZ-ndP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1395" y="59"/>
+            <point key="canvasLocation" x="357" y="74"/>
         </scene>
         <!--Shift Summary View Controller-->
         <!--Payment View Controller-->
@@ -499,7 +499,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oWT-i7-sUd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2722" y="741"/>
+            <point key="canvasLocation" x="3115" y="780"/>
         </scene>
         <!--Shift Shift Details View Controller-->
         <!--Terms And Conditions View Controller-->
@@ -577,7 +577,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XH7-9i-0AK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1554" y="132"/>
+            <point key="canvasLocation" x="1054" y="72"/>
         </scene>
         <scene sceneID="F3s-qP-eut">
             <objects>
@@ -622,17 +622,108 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7A5-mc-jzM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3840.8" y="122.7886"/>
+            <point key="canvasLocation" x="3114.8" y="71.7886"/>
+        </scene>
+        <scene sceneID="12">
+            <objects>
+                <viewController id="13" sceneMemberID="viewController" customClass="FirstViewController" storyboardIdentifier="FirstViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="10"/>
+                        <viewControllerLayoutGuide type="bottom" id="11"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="14">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First View" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="43" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="290" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor" colorSpace="calibratedWhite" white="0" alpha="1"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="47" firstAttribute="width" constant="560"/>
+                                </constraints>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0" green="1" blue="0" alpha="1"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint id="48" firstItem="14" firstAttribute="trailing" secondItem="43" secondAttribute="trailing" constant="20"/>
+                            <constraint id="49" firstItem="14" firstAttribute="bottom" secondItem="43" secondAttribute="bottom" constant="289"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="15" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="735" y="744"/>
+        </scene>
+        <scene sceneID="19">
+            <objects>
+                <viewController id="20" sceneMemberID="viewController" customClass="SecondViewController" storyboardIdentifier="SecondViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="17"/>
+                        <viewControllerLayoutGuide type="bottom" id="18"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="21">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="50" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="319" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor" colorSpace="calibratedWhite" white="0" alpha="1"/>
+                                <constraints>
+                                    <constraint id="51" firstAttribute="width" constant="560"/>
+                                </constraints>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0" green="1" blue="0" alpha="1"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint id="52" firstItem="21" firstAttribute="trailing" secondItem="50" secondAttribute="trailing" constant="20"/>
+                            <constraint id="53" firstItem="21" firstAttribute="bottom" secondItem="50" secondAttribute="bottom" constant="260"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="22" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1450" y="741"/>
+        </scene>
+        <scene sceneID="26">
+            <objects>
+                <viewController id="27" sceneMemberID="viewController" customClass="ThirdViewController" storyboardIdentifier="ThirdViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="24"/>
+                        <viewControllerLayoutGuide type="bottom" id="25"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="28">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Third View" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="54" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="341" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor" colorSpace="calibratedWhite" white="0" alpha="1"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="55" firstAttribute="width" constant="560"/>
+                                </constraints>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0" green="1" blue="0" alpha="1"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint id="60" firstItem="28" firstAttribute="trailing" secondItem="54" secondAttribute="trailing" constant="20"/>
+                            <constraint id="61" firstItem="28" firstAttribute="bottom" secondItem="54" secondAttribute="bottom" constant="238"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="29" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2291" y="767"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Images/blue_pin.png" width="56" height="96"/>
-        <image name="Images/er_onboarding_0.jpg" width="1125" height="1876"/>
-        <image name="Images/ic_empty_notifications.png" width="452" height="408"/>
-        <image name="Images/ic_nav_payroll.png" width="151" height="106"/>
-        <image name="Images/ic_profile_upload.png" width="36" height="36"/>
-        <image name="Images/ic_shift_details_manager.png" width="80" height="80"/>
-        <image name="Images/ic_shift_details_rate.png" width="88" height="68"/>
         <image name="Images/ic_shift_pin.png" width="76" height="104"/>
         <image name="Images/ic_shift_special_notes.png" width="72" height="72"/>
         <image name="Images/welcome_logo_header.png" width="880" height="200"/>
@@ -645,5 +736,6 @@
         <image name="Images/ic_chevron_right.png" width="30" height="48"/>
         <image name="Images/ic_cancel.png" width="32" height="32"/>
         <image name="Images/ic_cancel_grey.png" width="56" height="56"/>
+        <image name="Images/ic_shift_templates_people.png" width="64" height="64"/>
     </resources>
 </document>
