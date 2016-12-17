@@ -111,15 +111,14 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
-    <Reference Include="System.Collections.Immutable, Version=1.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\packages\System.Collections.Immutable.1.2.0\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
     <Reference Include="Cirrious.FluentLayouts.Touch">
       <HintPath>..\..\..\..\packages\Cirrious.FluentLayout.2.5.0\lib\Xamarin.iOS10\Cirrious.FluentLayouts.Touch.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable">
+      <HintPath>..\..\..\..\packages\System.Collections.Immutable.1.3.0\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -138,7 +137,6 @@
     <None Include="Entitlements.plist" />
     <None Include="packages.config" />
     <InterfaceDefinition Include="Storyboard\MainStoryboard.storyboard" />
-    <InterfaceDefinition Include="Storyboard\MainStoryboardIulian.storyboard" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bootstrap\DownloadCachePluginBootstrap.cs" />
@@ -160,39 +158,39 @@
     <Compile Include="Setup.cs" />
     <Compile Include="DebugTrace.cs" />
     <Compile Include="LinkerPleaseInclude.cs" />
-    <Compile Include="Views\BaseMvxTableViewController.cs" />
     <Compile Include="Views\BaseMvxViewController.cs" />
-    <Compile Include="Views\BaseViewController.cs" />
     <Compile Include="Views\CenterPanelView.cs" />
-    <Compile Include="Views\ChoosePeopleViewController.cs" />
-    <Compile Include="Views\ChoosePeopleViewController.designer.cs">
-      <DependentUpon>ChoosePeopleViewController.cs</DependentUpon>
-    </Compile>
     <Compile Include="Views\KeyboardHandlingView.cs" />
     <Compile Include="Views\BaseMenuViewController.cs" />
-    <Compile Include="Views\MenuViewController.cs" />
-    <Compile Include="Views\MenuViewController.designer.cs">
-      <DependentUpon>MenuViewController.cs</DependentUpon>
+    <Compile Include="Views\Added\BaseMvxTableViewController.cs" />
+    <Compile Include="Views\Added\BaseViewController.cs" />
+    <Compile Include="Views\Added\ChoosePeopleViewController.cs" />
+    <Compile Include="Views\Added\ChoosePeopleViewController.designer.cs">
+      <DependentUpon>ChoosePeopleViewController.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\TemplatesViewController.cs" />
-    <Compile Include="Views\TemplatesViewController.designer.cs">
-      <DependentUpon>TemplatesViewController.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\FirstViewController.cs" />
-    <Compile Include="Views\FirstViewController.designer.cs">
+    <Compile Include="Views\Added\FirstViewController.cs" />
+    <Compile Include="Views\Added\FirstViewController.designer.cs">
       <DependentUpon>FirstViewController.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\SecondViewController.cs" />
-    <Compile Include="Views\SecondViewController.designer.cs">
+    <Compile Include="Views\Added\MenuViewController.cs" />
+    <Compile Include="Views\Added\MenuViewController.designer.cs">
+      <DependentUpon>MenuViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Added\SecondViewController.cs" />
+    <Compile Include="Views\Added\SecondViewController.designer.cs">
       <DependentUpon>SecondViewController.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\ThirdViewController.cs" />
-    <Compile Include="Views\ThirdViewController.designer.cs">
-      <DependentUpon>ThirdViewController.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\TalentPoolViewController.cs" />
-    <Compile Include="Views\TalentPoolViewController.designer.cs">
+    <Compile Include="Views\Added\TalentPoolViewController.cs" />
+    <Compile Include="Views\Added\TalentPoolViewController.designer.cs">
       <DependentUpon>TalentPoolViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Added\TemplatesViewController.cs" />
+    <Compile Include="Views\Added\TemplatesViewController.designer.cs">
+      <DependentUpon>TemplatesViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Added\ThirdViewController.cs" />
+    <Compile Include="Views\Added\ThirdViewController.designer.cs">
+      <DependentUpon>ThirdViewController.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
@@ -252,5 +250,8 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Images\ic_cancel_grey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Added\" />
   </ItemGroup>
 </Project>
