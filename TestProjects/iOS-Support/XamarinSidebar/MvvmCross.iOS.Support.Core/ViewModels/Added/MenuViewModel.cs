@@ -28,12 +28,12 @@ namespace MvvmCross.iOS.Support.XamarinSidebarSample.Core.ViewModels
 
             MenuItems = new List<MenuItem>
             {
-                new MenuItem()
-                {
-                    IconPath = "Images/ic_nav_talent_pool",
-                    Text = "Talent Pool",
-                    ViewModelType = "TalentPoolViewModel" // nameof(TalentPoolViewModel)
-                },
+                //new MenuItem()
+                //{
+                //    IconPath = "Images/ic_nav_talent_pool",
+                //    Text = "Talent Pool",
+                //    ViewModelType = "TalentPoolViewModel" // nameof(TalentPoolViewModel)
+                //},
                 new MenuItem()
                 {
                     IconPath = "Images/ic_nav_templates",
@@ -131,9 +131,9 @@ namespace MvvmCross.iOS.Support.XamarinSidebarSample.Core.ViewModels
             MvxTrace.Warning($"|||||||||||||||||||||||||||||||||Tapped on {menuItem.ViewModelType}||||||||||||||||||||||");
             switch (menuItem.ViewModelType)
             {
-                case "TalentPoolViewModel": //nameof(TalentPoolViewModel):
-                    //ShowViewModel<TalentPoolViewModel>();
-                    break;
+                //case "TalentPoolViewModel": //nameof(TalentPoolViewModel):
+                //    //ShowViewModel<TalentPoolViewModel>();
+                //    break;
 
                 case nameof(ShiftTemplatesViewModel):
                     ShowViewModel<ShiftTemplatesViewModel>();

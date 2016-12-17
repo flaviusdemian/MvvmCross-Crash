@@ -76,6 +76,7 @@ namespace MvvmCross.iOS.Support.XamarinSidebarSample.Core.ViewModels
                     {
                         ShiftTemplates.Add(item);
                     }
+				//RaisePropertyChanged(() => ShiftTemplates);
                 //}
             });
         }

@@ -39,7 +39,6 @@ namespace MvvmCross.iOS.Support.XamarinSidebarSample.iOS.Views
             var bindingSet = this.CreateBindingSet<ChoosePeopleViewController, ChoosePeopleViewModel>();
             bindingSet.Bind(l_choose_people_available).To(vm => vm.AvailablePeopleCount).WithConversion("AvailablePeople");
             bindingSet.Bind(source).To(vm => vm.Employees);
-            bindingSet.Bind(source).For(s => s.SelectionChangedCommand).To(vm => vm.ItemSelectedCommand);
             bindingSet.Bind(btn_choose_people_continue).To(vm => vm.CreateShiftCommand);
             bindingSet.Bind(btn_choose_people_all).To(vm => vm.SelectAllAvailableCommand);
             bindingSet.Bind(l_choose_people_selected).To(vm => vm.SelectedPeopleCountDisplay);

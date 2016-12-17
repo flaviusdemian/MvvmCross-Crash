@@ -30,8 +30,6 @@ namespace MvvmCross.iOS.Support.XamarinSidebarSample.Core.ViewModels
         private int mAvailablePeopleCount;
         private Action mOnUpdateTextAction;
 
-        private ICommand mItemTappedCommand;
-        private ICommand mItemSelectedCommand;
         private ICommand mCreateShiftCommand;
         private ICommand mSelectAllAvailableCommand;
 
@@ -123,15 +121,6 @@ namespace MvvmCross.iOS.Support.XamarinSidebarSample.Core.ViewModels
             {
                 mCreateShiftCommand = mCreateShiftCommand ?? new MvxCommand(CreateShiftAction);
                 return mCreateShiftCommand;
-            }
-        }
-
-        public ICommand ItemSelectedCommand
-        {
-            get
-            {
-                mItemSelectedCommand = mItemSelectedCommand ?? new MvxCommand<EmployeeUI>(ItemSelectedAction);
-                return mItemSelectedCommand;
             }
         }
 
