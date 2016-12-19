@@ -30,6 +30,7 @@ namespace MvvmCross.iOS.Views
             Action action = () =>
                 {
                     MvxTrace.TaggedTrace("iOSNavigation", "Navigate requested");
+				//IT seems that here is a problem in the stack.
                     this._presenter.Show(request);
                 };
             return this.RequestMainThreadAction(action);
