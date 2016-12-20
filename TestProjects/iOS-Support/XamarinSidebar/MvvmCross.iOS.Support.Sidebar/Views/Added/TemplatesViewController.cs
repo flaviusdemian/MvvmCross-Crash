@@ -18,6 +18,10 @@ namespace MvvmCross.iOS.Support.XamarinSidebarSample.iOS.Views
 		{
 		}
 
+		public TemplatesViewController()
+		{
+		}
+
 		public override void ViewDidLoad()
 		{
 			base.ViewDidLoad();

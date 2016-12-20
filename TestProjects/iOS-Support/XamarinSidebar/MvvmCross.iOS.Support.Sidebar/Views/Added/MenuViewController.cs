@@ -51,6 +51,8 @@ namespace MvvmCross.iOS.Support.XamarinSidebarSample.iOS.Views
 			bindingSet.Apply();
 
 			TableView.ReloadData();
+
+			SearchDisplayController?.Dispose();
 		}
 
 		private void OnSignOutAction(bool success, int statusCode)

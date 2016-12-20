@@ -7,7 +7,7 @@ namespace MvvmCross.iOS.Support.XamarinSidebarSample.iOS.Views
     public abstract class BaseMvxTableViewController : MvxTableViewController
     {
 
-        public BaseMvxTableViewController(IntPtr handle)
+        public BaseMvxTableViewController(IntPtr handle) : base(handle)
         {
             Handle = handle;
         }

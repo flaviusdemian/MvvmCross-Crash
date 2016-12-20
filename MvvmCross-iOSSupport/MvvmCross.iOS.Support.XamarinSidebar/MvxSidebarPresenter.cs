@@ -1,16 +1,18 @@
 ﻿namespace MvvmCross.iOS.Support.XamarinSidebar
 {
-    using Core.ViewModels;
-    using iOS.Views;
-    using iOS.Views.Presenters;
-    using MvvmCross.Platform;
-    using MvvmCross.Platform.Exceptions;
-    using System.Linq;
-    using UIKit;
-    using SidePanels;
-    using Hints;
+	using Core.ViewModels;
+	using iOS.Views;
+	using iOS.Views.Presenters;
+	using MvvmCross.Platform;
+	using MvvmCross.Platform.Exceptions;
+	using System.Linq;
+	using UIKit;
+	using SidePanels;
+	using Hints;
+	using System;
+	using MvvmCross.Platform.Platform;
 
-    public class MvxSidebarPresenter : MvxIosViewPresenter
+	public class MvxSidebarPresenter : MvxIosViewPresenter
     {
         protected virtual UINavigationController ParentRootViewController { get; set; }
         protected virtual MvxSidebarPanelController RootViewController { get; set; }
@@ -28,8 +30,14 @@
             if (hint == null)
                 return false;
 
-            hint.Navigate();
-
+			try
+			{
+				hint.Navigate();
+			}
+			catch (Exception ex)
+			{
+				MvxTrace.Error(ex.ToString());
+			}
             return true;
         }
 

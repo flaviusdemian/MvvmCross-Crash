@@ -19,7 +19,7 @@ namespace MvvmCross.iOS.Support.XamarinSidebarSample.iOS.Views
         private static string SELECT_ALL_PEOPLE_TEXT = "Select all";
         private static string DESELECT_ALL_PEOPLE_TEXT = "Deselect all";
 
-        public ChoosePeopleViewController()
+		public ChoosePeopleViewController() : base()
         {
         }
 

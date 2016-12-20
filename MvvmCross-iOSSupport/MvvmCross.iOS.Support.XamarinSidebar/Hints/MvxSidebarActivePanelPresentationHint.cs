@@ -1,10 +1,12 @@
 ﻿namespace MvvmCross.iOS.Support.XamarinSidebar.Hints
 {
-    using UIKit;
-    using SidePanels;
-    using SidebarNavigation;
+	using UIKit;
+	using SidePanels;
+	using SidebarNavigation;
+	using System;
+	using MvvmCross.Platform.Platform;
 
-    public class MvxSidebarActivePanelPresentationHint : MvxPanelPresentationHint
+	public class MvxSidebarActivePanelPresentationHint : MvxPanelPresentationHint
     {
         public MvxSidebarActivePanelPresentationHint(MvxPanelEnum panel, MvxSidebarPanelController sidebarPanelController, UIViewController viewController)
             : base(panel)
@@ -23,17 +25,24 @@
 
             var navigationController = SidebarPanelController.NavigationController;
 
-            switch (Panel)
-            {
-                case MvxPanelEnum.Left:
-                case MvxPanelEnum.Right:
-                    InitSidebar();
-                    break;
-                case MvxPanelEnum.Center:
-                default:
-                    navigationController?.PushViewController(ViewController, true);
-                    break;
-            }
+			try
+			{
+				switch (Panel)
+				{
+					case MvxPanelEnum.Left:
+					case MvxPanelEnum.Right:
+						InitSidebar();
+						break;
+					case MvxPanelEnum.Center:
+					default:
+						navigationController?.PushViewController(ViewController, true);
+						break;
+				}
+			}
+			catch (Exception ex)
+			{
+				MvxTrace.Error(ex.ToString());
+			}
 
             return true;
         }
